@@ -8,7 +8,7 @@ window.config(padx=90, pady=150)
 
 
 def button_clicked():
-    conversion.config(text=math.floor(int(input.get()) * 1.609344))
+    conversion.config(text=round((float(input.get()) * 1.609344), 1))
 
 
 input = Entry(width=7)
